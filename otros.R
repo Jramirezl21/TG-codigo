@@ -262,3 +262,20 @@ ggplot(dfedad, aes(x = Datos.num.incomp.edad, y = Puntaje.I_1, color = Datos.num
   geom_point() +
   labs(x = "Edad", y = "Puntaje", color = "Sexo") +
   theme_minimal()
+
+# Mostrar el resultado
+print(df_filtrado)
+R2 <- hetcor(df_filtrado[,c(4:27)],type="Polychoric")$correlations#correla
+polychoric(df_filtrado[,c(4:27)])
+polychoric()
+n_missing <- colSums(is.na(df_filtrado))# d46 d47 fa11 fa12
+#leer cuales son estas variables
+n_missing2 <- colSums(is.na(Datos.fil))
+####
+# Seleccionar columnas numéricas
+num_cols <- sapply(df_filtrado, is.numeric)
+
+
+cor_pol <- hetcor(df_filtrado[,c(4:27)], type = "Polychoric")$correlations
+cor_poly_cap=polychoric(df_filtrado[,c(4:27)])
+cor_poly=polychoric(df_filtrado[,c(4:86)])

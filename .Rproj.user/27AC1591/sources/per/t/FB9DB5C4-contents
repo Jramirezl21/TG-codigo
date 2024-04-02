@@ -152,399 +152,86 @@ boxplot(Datos.num$edad~Datos.numl$c23,ylab = 'Edad', xlab='Sentir algún dolor f
 ###ORDEN DE DESEMPEÑO####
 #DESEMPEÑO 
 par(mfrow = c(2, 2))
-boxplot(Datos.num$edad~Datos.num$d1,ylab = 'Edad', xlab='Ponerse de pie estando sentado/a?') ; table(datosfil$d1)
-plot(Datos.num$edad~datosfil$d2, ylab = 'Edad', xlab='Estar de pie durante largos períodos de tiempo, como por ejemplo 30 minutos?') ; table(datosfil$d2)
-plot(Datos.num$edad~Datos.num$d4,ylab = 'Edad', xlab='Caminar distancias cortas tales como una cuadra o 100 metros?') ; table(datosfil$d4)
-plot(Datos.num$edad~Datos.num$d5,ylab = 'Edad',xlab = 'Caminar diez cuadras o un kilómetro?') ; table(datosfil$d5)
+boxplot(Datos.num$edad~Datos.num$d1,ylab = 'Edad', xlab='Ponerse de pie estando sentado/a?') ; table(Datos.num$d1)
+plot(Datos.num$edad~datosfil$d2, ylab = 'Edad', xlab='Estar de pie durante largos períodos de tiempo, como por ejemplo 30 minutos?') ; table(Datos.num$d2)
+plot(Datos.num$edad~Datos.num$d4,ylab = 'Edad', xlab='Caminar distancias cortas tales como una cuadra o 100 metros?') ; table(Datos.num$d4)
+plot(Datos.num$edad~Datos.num$d5,ylab = 'Edad',xlab = 'Caminar diez cuadras o un kilómetro?') ; table(Datos.num$d5)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d6,ylab = 'Edad', xlab='Realizar actividades físicamente exigentes, como jugar fútbol, levantar objetos pesados,andar en bicicleta o correr?'); table(datosfil$d6) 
-plot(datosfil$edad~datosfil$d7, ylab = 'Edad', xlab='Llegar a los lugares donde ha querido ir?') ; table(datosfil$d7)
-plot(datosfil$edad~datosfil$d8,ylab = 'Edad', xlab='Manipular objetos pequeños o abrir un envase?') ; table(datosfil$d8)
-plot(datosfil$edad~datosfil$d9,ylab = 'Edad',xlab = 'Levantar una botella de agua de dos litros llena, desde la cintura hasta el nivel de los ojos?') ; table(datosfil$d9)
+plot(Datos.num$edad~Datos.num$d6,ylab = 'Edad', xlab='Realizar actividades físicamente exigentes, como jugar fútbol, levantar objetos pesados,andar en bicicleta o correr?'); table(Datos.num$d6) 
+plot(Datos.num$edad~Datos.num$d7, ylab = 'Edad', xlab='Llegar a los lugares donde ha querido ir?') ; table(Datos.num$d7)
+plot(Datos.num$edad~Datos.num$d8,ylab = 'Edad', xlab='Manipular objetos pequeños o abrir un envase?') ; table(Datos.num$d8)
+plot(Datos.num$edad~Datos.num$d9,ylab = 'Edad',xlab = 'Levantar una botella de agua de dos litros llena, desde la cintura hasta el nivel de los ojos?') ; table(Datos.num$d9)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d10,ylab = 'Edad', xlab=' Asearse o vestirse?'); table(datosfil$d10) 
-plot(datosfil$edad~datosfil$d11, ylab = 'Edad', xlab='Alimentarse?') ; table(datosfil$d11)
-plot(datosfil$edad~datosfil$d12,ylab = 'Edad', xlab=' Utilizar el baño (W.C.)?') ; table(datosfil$d12)
-plot(datosfil$edad~datosfil$d13,ylab = 'Edad', xlab='Cortarse las uñas de los pies?') ; table(datosfil$d13)
+plot(Datos.num$edad~Datos.num$d10,ylab = 'Edad', xlab=' Asearse o vestirse?'); table(Datos.num$d10) 
+plot(Datos.num$edad~Datos.numl$d11, ylab = 'Edad', xlab='Alimentarse?') ; table(Datos.num$d11)
+plot(Datos.num$edad~Datos.num$d12,ylab = 'Edad', xlab=' Utilizar el baño (W.C.)?') ; table(Datos.num$d12)
+plot(Datos.num$edad~Datos.num$d13,ylab = 'Edad', xlab='Cortarse las uñas de los pies?') ; table(Datos.num$d13)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d14,ylab = 'Edad', xlab='Cuidar de su salud?') ; table(datosfil$d14)
-plot(datosfil$edad~datosfil$d15,ylab = 'Edad', xlab='Ver objetos de lejos?') ; table(datosfil$d15)
-plot(datosfil$edad~datosfil$d16,ylab = 'Edad', xlab='Ver objetos de cerca?') ; table(datosfil$d16)
-plot(datosfil$edad~datosfil$d17,ylab = 'Edad', xlab='Oír una conversación en un lugar silencioso?') ; table(datosfil$d17)
+plot(Datos.num$edad~Datos.num$d14,ylab = 'Edad', xlab='Cuidar de su salud?') ; table(Datos.num$d14)
+plot(Datos.num$edad~Datos.num$d15,ylab = 'Edad', xlab='Ver objetos de lejos?') ; table(Datos.num$d15)
+plot(Datos.num$edad~Datos.num$d16,ylab = 'Edad', xlab='Ver objetos de cerca?') ; table(Datos.num$d16)
+plot(Datos.num$edad~Datos.num$d17,ylab = 'Edad', xlab='Oír una conversación en un lugar silencioso?') ; table(Datos.num$d17)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d18,ylab = 'Edad', xlab=' Oír una conversación en una habitación con ruido alrededor?') ; table(datosfil$d18)
-plot(datosfil$edad~datosfil$d19,ylab = 'Edad', xlab='Sentir algún dolor físico, por ejemplo dolor de espalda, dolor de estómago o dolor de cabeza?') ; table(datosfil$d19)
-plot(datosfil$edad~datosfil$d20,ylab = 'Edad', xlab='Dormir?') ; table(datosfil$d20)
-plot(datosfil$edad~datosfil$d21,ylab = 'Edad',xlab = 'Sentirse cansado y no tener suficiente energía?') ; table(datosfil$d21)
+plot(Datos.num$edad~Datos.num$d18,ylab = 'Edad', xlab=' Oír una conversación en una habitación con ruido alrededor?') ; table(Datos.num$d18)
+plot(Datos.num$edad~Datos.num$d19,ylab = 'Edad', xlab='Sentir algún dolor físico, por ejemplo dolor de espalda, dolor de estómago o dolor de cabeza?') ; table(Datos.num$d19)
+plot(Datos.num$edad~Datos.num$d20,ylab = 'Edad', xlab='Dormir?') ; table(Datos.num$d20)
+plot(Datos.num$edad~Datos.num$d21,ylab = 'Edad',xlab = 'Sentirse cansado y no tener suficiente energía?') ; table(Datos.num$d21)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d22,ylab = 'Edad',xlab = 'Sentir falta de aire?') ; table(datosfil$d22)
-plot(datosfil$edad~datosfil$d23,ylab = 'Edad',xlab = 'Toser o respirar con dificultad?') ; table(datosfil$d23)
-plot(datosfil$edad~datosfil$d24,ylab = 'Edad',xlab = 'Sentirse triste, bajo de ánimo o deprimido/a?') ; table(datosfil$d24)
-plot(datosfil$edad~datosfil$d25,ylab = 'Edad',xlab = 'Sentir preocupación, nerviosismo o ansiedad? d26 Llevarse bien con personas cercanas, incluyendo su familia y amigos?') ; table(datosfil$d25)
+plot(Datos.num$edad~Datos.num$d22,ylab = 'Edad',xlab = 'Sentir falta de aire?') ; table(Datos.num$d22)
+plot(Datos.num$edad~Datos.num$d23,ylab = 'Edad',xlab = 'Toser o respirar con dificultad?') ; table(Datos.num$d23)
+plot(Datos.num$edad~Datos.num$d24,ylab = 'Edad',xlab = 'Sentirse triste, bajo de ánimo o deprimido/a?') ; table(Datos.num$d24)
+plot(Datos.num$edad~Datos.num$d25,ylab = 'Edad',xlab = 'Sentir preocupación, nerviosismo o ansiedad? d26 Llevarse bien con personas cercanas, incluyendo su familia y amigos?') ; table(Datos.num$d25)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d26,ylab = 'Edad',xlab = '') ; table(datosfil$d26)
-plot(datosfil$edad~datosfil$d27,ylab = 'Edad',xlab = 'Relacionarse con personas que no conoce?') ; table(datosfil$d27)
-plot(datosfil$edad~datosfil$d28,ylab = 'Edad',xlab = 'Hacer nuevas amistades o mantener las actuales?') ; table(datosfil$d28)
-plot(datosfil$edad~datosfil$d29,ylab = 'Edad',xlab = 'Tener una relación de pareja?') ; table(datosfil$d29)
+plot(Datos.num$edad~Datos.num$d26,ylab = 'Edad',xlab = '') ; table(Datos.num$d26)
+plot(Datos.num$edad~Datos.num$d27,ylab = 'Edad',xlab = 'Relacionarse con personas que no conoce?') ; table(Datos.num$d27)
+plot(Datos.num$edad~Datos.num$d28,ylab = 'Edad',xlab = 'Hacer nuevas amistades o mantener las actuales?') ; table(Datos.num$d28)
+plot(Datos.num$edad~Datos.num$d29,ylab = 'Edad',xlab = 'Tener una relación de pareja?') ; table(Datos.num$d29)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d30,ylab = 'Edad',xlab = 'Manejar el estrés?') ; table(datosfil$d30)
-plot(datosfil$edad~datosfil$d31,ylab = 'Edad',xlab = 'Enfrentar todas las tareas que tiene que hacer?') ; table(datosfil$d31)
-plot(datosfil$edad~datosfil$d32,ylab = 'Edad',xlab = 'Ser entendido, utilizando su lenguaje habitual?') ; table(datosfil$d32)
-plot(datosfil$edad~datosfil$d33,ylab = 'Edad',xlab = 'Entender a otros, utilizando su lenguaje habitual?') ; table(datosfil$d33)
+plot(Datos.num$edad~Datos.num$d30,ylab = 'Edad',xlab = 'Manejar el estrés?') ; table(Datos.num$d30)
+plot(Datos.num$edad~Datos.num$d31,ylab = 'Edad',xlab = 'Enfrentar todas las tareas que tiene que hacer?') ; table(Datos.num$d31)
+plot(Datos.num$edad~Datos.num$d32,ylab = 'Edad',xlab = 'Ser entendido, utilizando su lenguaje habitual?') ; table(Datos.num$d32)
+plot(Datos.num$edad~Datos.num$d33,ylab = 'Edad',xlab = 'Entender a otros, utilizando su lenguaje habitual?') ; table(Datos.num$d33)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d34,ylab = 'Edad',xlab = 'Olvidar cosas/tener mala memoria?') ; table(datosfil$d34)
-plot(datosfil$edad~datosfil$d35,ylab = 'Edad',xlab = 'Recordar las cosas importantes que tiene que hacer en su día a día?') ; table(datosfil$d35)
-plot(datosfil$edad~datosfil$d36,ylab = 'Edad',xlab = 'Encontrar soluciones a los problemas del día a día?') ; table(datosfil$d36)
-plot(datosfil$edad~datosfil$d37,ylab = 'Edad',xlab = 'Completar las tareas de la casa como barrer, cocinar, hacer arreglos o sacar la basura?') ; table(datosfil$d37)
+plot(Datos.num$edad~Datos.num$d34,ylab = 'Edad',xlab = 'Olvidar cosas/tener mala memoria?') ; table(Datos.num$d34)
+plot(Datos.num$edad~Datos.num$d35,ylab = 'Edad',xlab = 'Recordar las cosas importantes que tiene que hacer en su día a día?') ; table(Datos.num$d35)
+plot(Datos.num$edad~Datos.num$d36,ylab = 'Edad',xlab = 'Encontrar soluciones a los problemas del día a día?') ; table(Datos.num$d36)
+plot(Datos.num$edad~Datos.num$d37,ylab = 'Edad',xlab = 'Completar las tareas de la casa como barrer, cocinar, hacer arreglos o sacar la basura?') ; table(Datos.num$d37)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d38,ylab = 'Edad',xlab = 'Administrar el dinero que posee?') ; table(datosfil$d38)
-plot(datosfil$edad~datosfil$d39,ylab = 'Edad',xlab = 'Hacer cosas que lo relajen o que lo hagan disfrutar?') ; table(datosfil$d39)
-plot(datosfil$edad~datosfil$d40,ylab = 'Edad',xlab = 'Participar en fiestas, eventos religiosos, reuniones vecinales u otras actividades comunales?') ; table(datosfil$d40)
-plot(datosfil$edad~datosfil$d41,ylab = 'Edad',xlab = 'Participar en la política local o nacional y en organizaciones de la sociedad civil?') ; table(datosfil$d41)
+plot(Datos.num$edad~Datos.num$d38,ylab = 'Edad',xlab = 'Administrar el dinero que posee?') ; table(Datos.num$d38)
+plot(Datos.num$edad~Datos.num$d39,ylab = 'Edad',xlab = 'Hacer cosas que lo relajen o que lo hagan disfrutar?') ; table(Datos.num$d39)
+plot(Datos.num$edad~Datos.num$d40,ylab = 'Edad',xlab = 'Participar en fiestas, eventos religiosos, reuniones vecinales u otras actividades comunales?') ; table(Datos.num$d40)
+plot(Datos.num$edad~Datos.num$d41,ylab = 'Edad',xlab = 'Participar en la política local o nacional y en organizaciones de la sociedad civil?') ; table(Datos.num$d41)
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$d42,ylab = 'Edad',xlab = 'Cuidar o dar apoyo a otros?') ; table(datosfil$d42)
-plot(datosfil$edad~datosfil$d43,ylab = 'Edad',xlab = 'Postular o conseguir un empleo?') ; table(datosfil$d43)
-plot(datosfil$edad~datosfil$d44,ylab = 'Edad',xlab = 'Acceder a una educación superior? Ejemplos: CFT, IP, Universidad') ; table(datosfil$d44)
-plot(datosfil$edad~datosfil$d45,ylab = 'Edad',xlab = 'Utilizar los servicios de transporte público?') ; table(datosfil$d45)
+plot(Datos.num$edad~Datos.num$d42,ylab = 'Edad',xlab = 'Cuidar o dar apoyo a otros?') ; table(Datos.num$d42)
+plot(Datos.num$edad~Datos.num$d43,ylab = 'Edad',xlab = 'Postular o conseguir un empleo?') ; table(Datos.num$d43)
+plot(Datos.num$edad~Datos.num$d44,ylab = 'Edad',xlab = 'Acceder a una educación superior? Ejemplos: CFT, IP, Universidad') ; table(Datos.num$d44)
+plot(Datos.num$edad~Datos.num$d45,ylab = 'Edad',xlab = 'Utilizar los servicios de transporte público?') ; table(Datos.num$d45)
 par(mfrow = c(1, 2))
-plot(datosfil$edad~datosfil$d46,ylab = 'Edad',xlab = 'Realizar las tareas que le solicitan en su empleo?') ; table(datosfil$d46)
-plot(datosfil$edad~datosfil$d47,ylab = 'Edad',xlab = 'Realizar las tareas que le solicitan en su establecimiento educacional?') ; table(datosfil$d47)
+plot(Datos.num$edad~Datos.num$d46,ylab = 'Edad',xlab = 'Realizar las tareas que le solicitan en su empleo?') ; table(Datos.num$d46)
+plot(Datos.num$edad~Datos.num$d47,ylab = 'Edad',xlab = 'Realizar las tareas que le solicitan en su establecimiento educacional?') ; table(Datos.num$d47)
 
 
 ###FACTORES AMBIENTALES----
 par(mfrow = c(2, 2))
-plot(datosfil$edad~datosfil$fa1,ylab = 'Edad',xlab='fa1:le resulta fácil o difícil utilizar los servicios sanitarios que necesita con regularidad?',cex=0.02) ; table(datosfil$fa1)
-plot(datosfil$edad~datosfil$fa2,ylab = 'Edad',xlab='fa2:¿le resultan fáciles o difíciles los lugares donde se relaciona y participa en actividades comunitarias?',cex=0.02) ; table(datosfil$fa2)
-plot(datosfil$edad~datosfil$fa3,ylab = 'Edad',xlab='fa3:¿le resulta fácil o difícil utilizar las tiendas, bancos y oficinas de correos de su barrio?',cex=0.02) ; table(datosfil$fa3)
-plot(datosfil$edad~datosfil$fa4,ylab = 'Edad',xlab='fa4:¿le resulta fácil o difícil practicar su religión en los lugares de culto que frecuenta habitualmente?
-',cex=0.02) ; table(datosfil$fa4)
-plot(datosfil$edad~datosfil$fa5,ylab = 'Edad',xlab='fa5:los medios de transporte que necesita o desea utilizar, ¿le resultan fáciles o difíciles de utilizar?',cex=0.02) ; table(datosfil$fa5)
-plot(datosfil$edad~datosfil$fa6,ylab = 'Edad',xlab='fa6:¿le resulta fácil o difícil vivir en su vivienda (incluido el aseo y todas las habitaciones)?') ; table(datosfil$fa6)
-plot(datosfil$edad~datosfil$fa7,ylab = 'Edad',xlab='fa7:¿le facilitan o dificultan la vida la temperatura, el terreno y el clima del lugar donde vive habitualmente?') ; table(datosfil$fa7)
-plot(datosfil$edad~datosfil$fa8,ylab = 'Edad',xlab='fa8:¿la iluminación de su entorno le facilita o le dificulta la vida?') ; table(datosfil$fa8)
-plot(datosfil$edad~datosfil$fa9,ylab = 'Edad',xlab='fa9:¿el ruido de su entorno le facilita o le dificulta vivir en él?') ; table(datosfil$fa9)
-plot(datosfil$edad~datosfil$fa10,ylab = 'Edad',xlab='fa10:¿la aglomeración de gente en su entorno le facilita o le dificulta vivir allí?') ; table(datosfil$fa10)
-plot(datosfil$edad~datosfil$fa11,ylab = 'Edad',xlab='fa11:¿le resulta fácil o difícil trabajar o aprender en su lugar de trabajo?') ; table(datosfil$fa11)
-plot(datosfil$edad~datosfil$fa12,ylab = 'Edad',xlab='fa12:¿le resulta fácil o difícil trabajar o aprender en su centro de estudios?') ; table(datosfil$fa12)
-
-
-
-
-
-# Mostrar el resultado
-print(df_filtrado)
-R2 <- hetcor(df_filtrado[,c(4:27)],type="Polychoric")$correlations#correla
-polychoric(df_filtrado[,c(4:27)])
-polychoric()
-n_missing <- colSums(is.na(df_filtrado))# d46 d47 fa11 fa12
-#leer cuales son estas variables
-n_missing2 <- colSums(is.na(Datos.fil))
-####
-# Seleccionar columnas numéricas
-num_cols <- sapply(df_filtrado, is.numeric)
-
-
-cor_pol <- hetcor(df_filtrado[,c(4:27)], type = "Polychoric")$correlations
-cor_poly_cap=polychoric(df_filtrado[,c(4:27)])
-cor_poly=polychoric(df_filtrado[,c(4:86)])
-
-
-
+plot(Datos.num$edad~Datos.num$fa1,ylab = 'Edad',xlab='fa1:le resulta fácil o difícil utilizar los servicios sanitarios que necesita con regularidad?',cex=0.02) ; table(Datos.num$fa1)
+plot(Datos.num$edad~Datos.num$fa2,ylab = 'Edad',xlab='fa2:¿le resultan fáciles o difíciles los lugares donde se relaciona y participa en actividades comunitarias?',cex=0.02) ; table(Datos.num$fa2)
+plot(Datos.num$edad~Datos.num$fa3,ylab = 'Edad',xlab='fa3:¿le resulta fácil o difícil utilizar las tiendas, bancos y oficinas de correos de su barrio?',cex=0.02) ; table(Datos.num$fa3)
+plot(Datos.num$edad~Datos.num$fa4,ylab = 'Edad',xlab='fa4:¿le resulta fácil o difícil practicar su religión en los lugares de culto que frecuenta habitualmente?
+',cex=0.02) ; table(Datos.num$fa4)
+plot(Datos.num$edad~Datos.num$fa5,ylab = 'Edad',xlab='fa5:los medios de transporte que necesita o desea utilizar, ¿le resultan fáciles o difíciles de utilizar?',cex=0.02) ; table(Datos.num$fa5)
+plot(Datos.num$edad~Datos.num$fa6,ylab = 'Edad',xlab='fa6:¿le resulta fácil o difícil vivir en su vivienda (incluido el aseo y todas las habitaciones)?') ; table(Datos.num$fa6)
+plot(Datos.num$edad~Datos.num$fa7,ylab = 'Edad',xlab='fa7:¿le facilitan o dificultan la vida la temperatura, el terreno y el clima del lugar donde vive habitualmente?') ; table(Datos.num$fa7)
+plot(Datos.num$edad~Datos.num$fa8,ylab = 'Edad',xlab='fa8:¿la iluminación de su entorno le facilita o le dificulta la vida?') ; table(Datos.num$fa8)
+plot(Datos.num$edad~Datos.num$fa9,ylab = 'Edad',xlab='fa9:¿el ruido de su entorno le facilita o le dificulta vivir en él?') ; table(Datos.num$fa9)
+plot(Datos.num$edad~Datos.num$fa10,ylab = 'Edad',xlab='fa10:¿la aglomeración de gente en su entorno le facilita o le dificulta vivir allí?') ; table(Datos.num$fa10)
+plot(Datos.num$edad~Datos.num$fa11,ylab = 'Edad',xlab='fa11:¿le resulta fácil o difícil trabajar o aprender en su lugar de trabajo?') ; table(Datos.num$fa11)
+plot(Datos.num$edad~Datos.num$fa12,ylab = 'Edad',xlab='fa12:¿le resulta fácil o difícil trabajar o aprender en su centro de estudios?') ; table(Datos.num$fa12)
 # ANALISIS FACTORIAL ----
 
-#PLS DATOS ----
-#PLS 3 
-
-MFA.nipals.3G <- function(data, group, it,ncp) {
-  ## group: is a vector with the number variables per group.
-  ## it: is the number iterations in NIPALS.
-  
-  nipalsg1 <- ade4::nipals(data[,1:group[1]], niter=it,nf=ncp)
-  nipalsg2 <- ade4::nipals(data[,(group[1]+1):sum(group[1:2])], niter=it,nf=ncp)
-  nipalsg3 <- ade4::nipals(data[,(sum(group[1:2])+1):sum(group)], niter=it,nf=ncp)
-  
-  dataZ.na <- cbind(data[,1:group[1]]/nipalsg1$eig[1],
-                    data[,(group[1]+1):sum(group[1:2])]/nipalsg2$eig[1],
-                    data[,(sum(group[1:2])+1):sum(group)]/nipalsg3$eig[1])
-  
-  nipals.global.na <- ade4::nipals(dataZ.na,niter=it,nf=ncp)
-  
-  ## individual factor map
-   plot(nipals.global.na$li[,1],nipals.global.na$li[,2],
-       xlab="dim1",ylab="dim2",pch=19,
-       main="Individual factor map with MFA-NIPALS")
-  text(nipals.global.na$li[,1]+0.001,nipals.global.na$li[,2]+0.2,
-       1:50)
-  abline(h=0)
-  abline(v=0)
-  
-  ## corcircle
-  
-  #### circulo
-  radio <- 1
-  t <- seq(0, 2*pi, length.out = 100)
-  
-  x <- cos(t)*radio
-  y <- sin(t)*radio
-  
-  ### corcircle
-  
-  plot(nipals.global.na$co[,1],nipals.global.na$co[,2],
-       xlab="dim1",ylab="dim2",pch=19,
-       main="Correlation circle map with MFA-NIPALS",
-       ylim=c(-1.2,1.2),xlim=c(-1.1,1.1))
-  text(nipals.global.na$co[,1],nipals.global.na$co[,2]+0.001,
-       colnames(data),
-       col=c(rep(2,group[1]),rep(3,group[2]), rep(4,group[3])))
-  lines(x, y, lwd = 1)
-  abline(h=0)
-  abline(v=0)
-  
-
-  
-  
-  
-  results = list(T = nipals.global.na$li, F= nipals.global.na$co,
-                 lambda= nipals.global.na$eig)
-}
-
-#PLS 2 
-
-MFA.nipals.2G <- function(data, group, it,ncp) {
-  ## group: is a vector with the number variables per group.
-  ## it: is the number iterations in NIPALS.
-  
-  nipalsg1 <- ade4::nipals(data[,1:group[1]], niter=it,nf=ncp)
-  nipalsg2 <- ade4::nipals(data[,(group[1]+1):sum(group[1:2])], niter=it,nf=ncp)
-
-  
-  dataZ.na <- cbind(data[,1:group[1]]/nipalsg1$eig[1],
-                    data[,(group[1]+1):sum(group[1:2])]/nipalsg2$eig[1]
-                    )
-  
-  nipals.global.na <- ade4::nipals(dataZ.na,niter=it,nf=ncp)
-  
-  ## individual factor map
-  plot(nipals.global.na$li[,1],nipals.global.na$li[,2],
-       xlab="dim1",ylab="dim2",pch=19,
-       main="Individual factor map with MFA-NIPALS")
-  text(nipals.global.na$li[,1]+0.001,nipals.global.na$li[,2]+0.2,
-       1:50)
-  abline(h=0)
-  abline(v=0)
-  
- 
-  
-  ## corcircle
-  
-  #### circulo
-  radio <- 1
-  t <- seq(0, 2*pi, length.out = 100)
-  
-  x <- cos(t)*radio
-  y <- sin(t)*radio
-  
-  ### corcircle
-  
-  plot(nipals.global.na$co[,1],nipals.global.na$co[,2],
-       xlab="dim1",ylab="dim2",pch=19,
-       main="Correlation circle map with MFA-NIPALS",
-       ylim=c(-1.2,1.2),xlim=c(-1.1,1.1))
-  text(nipals.global.na$co[,1],nipals.global.na$co[,2]+0.001,
-       colnames(data),
-       col=c(rep(2,group[1]),rep(3,group[2])))
-  lines(x, y, lwd = 1)
-  abline(h=0)
-  abline(v=0)
-  
-  results = list(T = nipals.global.na$li, F= nipals.global.na$co,
-                 lambda= nipals.global.na$eig)
-}
-
-#PLS 4
-MFA.nipals.4G <- function(data, group, it, ncp) {
-  ## group: is a vector with the number variables per group.
-  ## it: is the number iterations in NIPALS.
-  ## ncp: number of axes to keep.
-  
-  nipalsg1 <- ade4::nipals(data[,1:group[1]], niter=it, nf=ncp)
-  nipalsg2 <- ade4::nipals(data[,(group[1]+1):sum(group[1:2])], niter=it, nf=ncp)
-  nipalsg3 <- ade4::nipals(data[,(sum(group[1:2])+1):sum(group[1:3])], niter=it, nf=ncp)
-  nipalsg4 <- ade4::nipals(data[,(sum(group[1:3])+1):sum(group)], niter=it, nf=ncp)
-  
-  
-  dataZ.na <- cbind(data[,1:group[1]]/nipalsg1$eig[1],
-                    data[,(group[1]+1):sum(group[1:2])]/nipalsg2$eig[1],
-                    data[,(sum(group[1:2])+1):sum(1:3)]/nipalsg3$eig[1],
-                    data[,(sum(group[1:3])+1):sum(group)]/nipalsg4$eig[1])
-  
-  nipals.global.na <- ade4::nipals(dataZ.na,niter=it, nf=ncp)
-  
-  ## individual factor map
-  plot(nipals.global.na$li[,1],nipals.global.na$li[,2],
-       xlab="dim1",ylab="dim2",pch=19,
-       main="Individual factor map with MFA-NIPALS")
-  text(nipals.global.na$li[,1]+0.001,nipals.global.na$li[,2]+0.2,
-       row.names(data), cex=0.7)
-  abline(h=0)
-  abline(v=0)
-  
-  
-  
-  ## corcircle
-  
-  #### circulo
-  radio <- 1
-  t <- seq(0, 2*pi, length.out = 100)
-  
-  x <- cos(t)*radio
-  y <- sin(t)*radio
-  
-  ### corcircle
-  
-  plot(nipals.global.na$co[,1],nipals.global.na$co[,2],
-       xlab="dim1",ylab="dim2",pch=19,
-       main="Correlation circle map with MFA-NIPALS",
-       ylim=c(-1.2,1.2),xlim=c(-1.1,1.1))
-  text(nipals.global.na$co[,1],nipals.global.na$co[,2]+0.001,
-       colnames(data),
-       col=c(rep(2,group[1]),rep(3,group[2]), rep(4,group[3]), 
-             rep(5,group[4])), cex=0.55)
-  lines(x, y, lwd = 1)
-  abline(h=0)
-  abline(v=0)
-  
-  
-  
-  results = list(T = nipals.global.na$li, F= nipals.global.na$co,
-                 lambda= nipals.global.na$eig)
-  
-}
-
-MFAnipals.cap <- MFA.nipals.3G(Datos.num.cap_reagrupado, group=c(8,14,1), it=100,ncp=3)
-MFAnipals.cap$lambda/23
-MFA.cap.num <- MFA(cap_reagrupado_NoNA_num, group =c(8,13,1))
-MFAnipals.cap$F
-
-
-MFA.fa.num <- MFA(fa_reagrupado_NoNA_num, group =c(7,1,1,1))
-MFAnipals.fa <- MFA.nipals.4G(Datos.num.fa_reagrupado, group =c(7,2,1,1),it=100,ncp=3)
-MFAnipals.fa$lambda/11
-
-
-MFAnipals.de <- MFA.nipals.2G(Datos.num.de_reagrupado, group=c(12,33), it=160,ncp=4)
-MFAnipals.de$lambda/46
-##Analisis Factorial (no NA)
-
-
-MFA.de.num <- FactoMineR:::MFA(de_reagrupado_NoNA_num, group =c(12,33))
-MFA.de.num$eig
-library(factoextra)
-# Calcular la varianza explicada por cada eje
-x11()
-fviz_mfa_var(MFA.de.num,axes = c(1, 3))
-
-MFAnipals.de$
-plot(MFAnipals.de)
-#Correr el pls con mas factores y evaluar factores de decision
-#Para saber con cuantos factores me quedo
-#Presentacion de pls
-
-
-valp.cap <- c(MFAnipals.cap$lambda)
-
-# Crear un dataframe con los datos
-df.valpCap <- data.frame(Factor = factor(1:length(valp.cap)), Valor = valp.cap)
-
-# Crear el gráfico de sedimentación
-ggplot(df.valpCap, aes(x = Factor, y = Valor)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  geom_point(color = "red", size = 3) +
-  geom_line(aes(group = 1), color = "red", size = 1) +
-  labs(x = "Factores", y = "Valores", title = "Gráfico de Sedimentación")
-MFAnipals.cap$lambda/23
-
-
-
-
-
-valp.fa<- c(MFAnipals.fa$lambda)
-
-# Crear un dataframe con los datos
-df.valpFa <- data.frame(Factor = factor(1:length(valp.fa)), Valor = valp.fa)
-
-# Crear el gráfico de sedimentación
-ggplot(df.valpFa, aes(x = Factor, y = Valor)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  geom_point(color = "red", size = 3) +
-  geom_line(aes(group = 1), color = "red", size = 1) +
-  labs(x = "Factores", y = "Valores", title = "Gráfico de Sedimentación")
-MFAnipals.fa$lambda/11
-
-
-valp.de<- c(MFAnipals.de$lambda)
-
-# Crear un dataframe con los datos
-df.valpDe <- data.frame(Factor = factor(1:length(valp.de)), Valor = valp.de)
-
-# Crear el gráfico de sedimentación
-ggplot(df.valpDe, aes(x = Factor, y = Valor)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  geom_point(color = "red", size = 3) +
-  geom_line(aes(group = 1), color = "red", size = 1) +
-  labs(x = "Factores", y = "Valores", title = "Gráfico de Sedimentación")
-MFAnipals.de$lambda/46
-###
 colSums(is.na(df))
 numero_filas_completas <- sum(complete.cases(df))
-######
-#AFM con los para los datos incompletos quitando educacion y sexo ----
-Datos.num.incomp <- Datos.num[rowSums(is.na(Datos.num)) > 0, ]
-capIncom_NoNA <- dplyr::select(Datos.num.incomp,c2,c3,c5,c15,c19,c20,c21,c23,c6,
-                                         c7,c8,c9,c10,c11,c12,c13,c14,c16,c17,c18,c22,c4)
-MFAincompCap <- MFA(capIncom_NoNA,group=c(8,13,1))
-fviz_mfa_var(MFAincompCap )
-fviz_mfa_ind(MFAincompCap )
-deIncom_NoNA <- dplyr::select(Datos.num.incomp,d15,d16,d17,d18,d19,d21,d22,d23,d24,d25,d34,d35,
-                                        d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, 
-                                        d14, d20, d26, d27, d28, d29, d30, d31, d32, d33, d36, d37, 
-                                        d38, d39, d40, d41, d42, d43, d44, d45)
-MFAincompDe <- MFA(deIncom_NoNA,group=c(12,33))
-fviz_mfa_var(MFAincompDe)
-fviz_mfa_ind(MFAincompDe)
-faIncom_NoNA <- dplyr::select(Datos.num.incomp,fa1,fa3,fa6,fa7,fa8,fa9,fa10,fa2,fa4,fa5)
-MFAincompFa <- MFA(faIncom_NoNA,group =c(7,1,1,1))
-fviz_mfa_var(MFAincompFa)
-fviz_mfa_ind(MFAincompFa)
 
-
-#AFM con las 212 obs ----
-Datos.num.comple <- na.omit(Datos.num)
-#8, 15,1
-capCom<- dplyr::select(Datos.num.comple,c2,c3,c5,c15,c19,c20,c21,c23,c6,
-                                          c7,c8,c9,c10,c11,c12,c13,c14,c16,c17,c18,c22,c24,c25,c4)
-MFAcompCap <- MFA(capCom,group=c(8,15,1))
-fviz_mfa_var(MFAcompCap)
-#12,35
-deCom <- dplyr::select(Datos.num.comple,d15,d16,d17,d18,d19,d21,d22,d23,d24,d25,d34,d35,
-                                         d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, 
-                                         d14, d20, d26, d27, d28, d29, d30, d31, d32, d33, d36, d37, 
-                                         d38, d39, d40, d41, d42, d43, d44, d45, d46,d47)
-MFAcompDe <- MFA(deCom,group=c(12,35))
-fviz_mfa_var(MFAcompDe)
-#7,3,1,1
-faCom<- dplyr::select(Datos.num.comple,fa1,fa3,fa6,fa7,fa8,fa9,fa10,fa11,fa12,fa2,fa4,fa5)
-MFAcompFa <- MFA(faCom,group=c(7,3,1,1))
-fviz_mfa_var(MFAcompFa)
-#####
-Incom_NoNA <- dplyr::select(Datos.num.incomp,-c(c24,c25,d46,d47,fa11,fa12))
-MFAincompGen <- MFA(Incom_NoNA[,c(5:81)],group=c(22,45,10))
-fviz_mfa_var(MFAincompGen)
-
-MFAcompGen <- MFA(Datos.num.comple[,c(5:87)],group=c(24,47,12))
-fviz_mfa_var(MFAcompGen)
-#####
-#Analisis Factorial exploratorio ----
+##Analisis Factorial exploratorio ----
 RIncom <- cor(Incom_NoNA[,c(5:81)])
 KMO(RIncom)
 scree(RIncom)
@@ -575,7 +262,7 @@ EFACom   <- fa(RIncom, nfactors = 3, rotate = "varimax",
                  fm="ml")
 
 
-# CFA ----
+## ANALISIS FACTORIAL CONFIRMATORIO ----
 modeloIncom<-"capacidad =~ c2 + c3 + c4 + c5 + c6 + c7 + c8 + c9 + c10 + c11 + c12 + c13 + c14 + c15 + c16 + c17 + c18 + c19 + c20 + c21 + c22 + c23
 desempeno =~ d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11 + d12 +
 d13 + d14 + d15 + d16 + d17 + d18 + d19 + d20 + d21 + d22 + d23 + d24 + 

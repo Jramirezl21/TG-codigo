@@ -3,7 +3,7 @@
     "path": "D:/jorge/Semestre 9/TG 1/TG codigo/Codigo TG.R",
     "project_path": "Codigo TG.R",
     "type": "r_source",
-    "hash": "3236514533",
+    "hash": "2044518717",
     "contents": "",
     "dirty": false,
     "created": 1707079481856.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "678,0",
-        "scrollLine": "0"
+        "cursorPosition": "260,48",
+        "scrollLine": "252"
     },
-    "folds": "19|16|64|0|\n65|23|77|23|\n79|24|98|83|\n99|34|115|0|\n116|15|116|19|\n117|21|150|0|\n151|21|212|0|\n213|23|251|0|\n254|11|498|49|\n257|48|308|0|\n312|48|361|0|\n364|49|421|0|\n",
-    "lastKnownWriteTime": 1711332955,
+    "folds": "19|16|64|0|\n65|23|77|23|\n79|24|98|83|\n99|34|115|0|\n116|15|116|19|\n117|21|150|0|\n151|21|212|0|\n213|23|227|159|\n",
+    "lastKnownWriteTime": 1712067605,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1711332955333,
+    "last_content_update": 1712067772893,
     "read_only": false,
     "read_only_alternatives": []
 }
