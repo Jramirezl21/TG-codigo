@@ -279,3 +279,7 @@ num_cols <- sapply(df_filtrado, is.numeric)
 cor_pol <- hetcor(df_filtrado[,c(4:27)], type = "Polychoric")$correlations
 cor_poly_cap=polychoric(df_filtrado[,c(4:27)])
 cor_poly=polychoric(df_filtrado[,c(4:86)])
+#Factor columnas de region sexo
+Datos.num$region <- as.factor(Datos.num$region)
+Datos.num$sexo <- as.factor(Datos.num$sexo)
+write.csv(Datos.num,file="DatosNum.csv",row.names = FALSE)
