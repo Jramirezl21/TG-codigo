@@ -283,3 +283,12 @@ cor_poly=polychoric(df_filtrado[,c(4:86)])
 Datos.num$region <- as.factor(Datos.num$region)
 Datos.num$sexo <- as.factor(Datos.num$sexo)
 write.csv(Datos.num,file="DatosNum.csv",row.names = FALSE)
+
+Datos.num.incomp$region <- as.factor(Datos.num.incomp$region)
+Datos.num.incomp$sexo <- as.factor(Datos.num.incomp$region)
+
+Datos.num.comple$region <- as.factor(Datos.num.comple$region)
+Datos.num.comple$sexo <- as.factor(Datos.num.comple$sexo )
+install.packages("foreign")
+write.foreign(Datos.num.comple, "Datos.num.comple.sav", "Datos.num.comple.sav", package = "SPSS")
+?write.foreign

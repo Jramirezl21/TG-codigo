@@ -26,9 +26,9 @@ data <- read_sav(ruta_del_archivo)
 
 
 dffiltrado <- subset(data, edad >= 18)
-
+rm(data)
 datosfil <- dffiltrado[,c(3,8,14,15,116:139,68:114,309:320)]
-
+rm(dffiltrado)
 
 datosfilt <- data.frame(lapply(datosfil, function(x) if(is.labelled(x)) as_factor(x) else x))
 datosfil1 <- data.frame(lapply(data_fil2, function(x) if(is.labelled(x)) as.numeric(x) else x))
@@ -58,11 +58,13 @@ Datos.cat <- data_fil %>%
   filter(cantidad_na < 83)
 Datos.cat <- droplevels(Datos.cat)
 
-wwwwwwwwwwwwwwwwwwwwwwwwwwwwws<-  data.frame(lapply(Datos.num, function(x) if(is.labelled(x)) as.numeric(x) else x))
+Datos.num<-  data.frame(lapply(Datos.num, function(x) if(is.labelled(x)) as.numeric(x) else x))
+Datos.num$region <- as.factor(Datos.num$region)
+Datos.num$sexo <- as.factor(Datos.num$sexo)
 
 cantidad_na2 <- rowSums(is.na(Datos.num))
 colSums(is.na(Datos.num))
-
+rm(data_fil);rm(data_fil2);rm(datosfil);rm(datosfilt)
 #REAGRUPACION CAPACIDAD----
 #8, 14,1
 Datos.num.cap_reagrupado <- dplyr::select(Datos.num,c2,c3,c5,c15,c19,c20,c21,c23,c6,
@@ -76,7 +78,7 @@ cap_reagrupado_NoNA_num <- dplyr::select(Datos.num,c2,c3,c5,c15,c19,c20,c21,c23,
 cap_reagrupado_NoNA_cat <- dplyr::select(Datos.cat,c2,c3,c5,c15,c19,c20,c21,c23,c6,
                                           c7,c8,c9,c10,c11,c12,c13,c14,c16,c17,c18,c22,c4)
 #REAGRUPACION DESEMPEÑO
-#######
+
 #REAGRUPACION DESEMPEÑO ----
 
 #12,34
@@ -270,15 +272,15 @@ d25 + d26 + d27 + d28 + d29 + d30 + d31 + d32 + d33 + d34 + d35 + d36 + d37
 + d38 + d39 + d40 + d41 + d42 + d43 + d44 + d45
 factores_ambientales =~ fa1 + fa2 + fa3 + fa4 + fa5 + fa6 + fa7 + fa8 + fa9 + fa10
 "
-
+Datos.num.incomp <- Datos.num[rowSums(is.na(Datos.num)) > 0, ]
+Incom_NoNA <- subset(Datos.num.incomp, select = -which(colSums(is.na(Datos.num.incomp)) > 0))
 fitIncom<-cfa(model= modeloIncom,
          data = Incom_NoNA[,c(5:81)], orthogonal=T,ordered = F)
+summary(fitIncom,fit.measures = TRUE, standardized = TRUE)
 semPlot::semPaths(fitIncom,nCharNodes = 0,intercepts = F,edge.label.cex = 1,
          edge.color = "black",sizeMan = standardizedSolution(fitIncom)$loading * 10,label.prop=0.45,sizeLat = 2,"std",layout = "circle",exoVar = T)
-semPlot::semPaths(fitIncom, "std",layout = "circle")
-parameterEstimates(fitIncom, standardized = TRUE)
-summary(fitIncom, standardized = TRUE, fit.measures = TRUE)
-plot(fitIncom)
+semPlot::semPaths(fitIncom, "std",layout = "circle3",edge.color = "black")
+lavInspect(fitIncom, "std")
 
 modeloCom<-"capacidad =~ c2 + c3 + c4 + c5 + c6 + c7 + c8 + c9 + c10 + c11 + c12 + c13 + c14 + c15 + c16 + c17 + c18 + c19 + c20 + c21 + c22 + c23 + c24 + c25
 desempeno =~ d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11 + d12 +

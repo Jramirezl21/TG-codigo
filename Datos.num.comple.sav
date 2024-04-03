@@ -1,0 +1,135 @@
+SET DECIMAL=DOT.
+
+DATA LIST FILE= "Datos.num.comple.sav"  free (",")
+ENCODING="Locale"
+/ rph_id * region (F8.0) sexo (F8.0) edad c2 c3 c4 c5 c6 c7 c8 c9 c10 
+ c11 c12 c13 c14 c15 c16 c17 c18 c19 c20 c21 c22 c23 c24 c25 d1 d2 d3 
+ d4 d5 d6 d7 d8 d9 d10 d11 d12 d13 d14 d15 d16 d17 d18 d19 d20 d21 d22 
+ d23 d24 d25 d26 d27 d28 d29 d30 d31 d32 d33 d34 d35 d36 d37 d38 d39 
+ d40 d41 d42 d43 d44 d45 d46 d47 fa1 fa2 fa3 fa4 fa5 fa6 fa7 fa8 fa9 
+ fa10 fa11 fa12 
+  .
+
+VARIABLE LABELS
+rph_id "rph_id" 
+ region "region" 
+ sexo "sexo" 
+ edad "edad" 
+ c2 "c2" 
+ c3 "c3" 
+ c4 "c4" 
+ c5 "c5" 
+ c6 "c6" 
+ c7 "c7" 
+ c8 "c8" 
+ c9 "c9" 
+ c10 "c10" 
+ c11 "c11" 
+ c12 "c12" 
+ c13 "c13" 
+ c14 "c14" 
+ c15 "c15" 
+ c16 "c16" 
+ c17 "c17" 
+ c18 "c18" 
+ c19 "c19" 
+ c20 "c20" 
+ c21 "c21" 
+ c22 "c22" 
+ c23 "c23" 
+ c24 "c24" 
+ c25 "c25" 
+ d1 "d1" 
+ d2 "d2" 
+ d3 "d3" 
+ d4 "d4" 
+ d5 "d5" 
+ d6 "d6" 
+ d7 "d7" 
+ d8 "d8" 
+ d9 "d9" 
+ d10 "d10" 
+ d11 "d11" 
+ d12 "d12" 
+ d13 "d13" 
+ d14 "d14" 
+ d15 "d15" 
+ d16 "d16" 
+ d17 "d17" 
+ d18 "d18" 
+ d19 "d19" 
+ d20 "d20" 
+ d21 "d21" 
+ d22 "d22" 
+ d23 "d23" 
+ d24 "d24" 
+ d25 "d25" 
+ d26 "d26" 
+ d27 "d27" 
+ d28 "d28" 
+ d29 "d29" 
+ d30 "d30" 
+ d31 "d31" 
+ d32 "d32" 
+ d33 "d33" 
+ d34 "d34" 
+ d35 "d35" 
+ d36 "d36" 
+ d37 "d37" 
+ d38 "d38" 
+ d39 "d39" 
+ d40 "d40" 
+ d41 "d41" 
+ d42 "d42" 
+ d43 "d43" 
+ d44 "d44" 
+ d45 "d45" 
+ d46 "d46" 
+ d47 "d47" 
+ fa1 "fa1" 
+ fa2 "fa2" 
+ fa3 "fa3" 
+ fa4 "fa4" 
+ fa5 "fa5" 
+ fa6 "fa6" 
+ fa7 "fa7" 
+ fa8 "fa8" 
+ fa9 "fa9" 
+ fa10 "fa10" 
+ fa11 "fa11" 
+ fa12 "fa12" 
+ .
+
+VALUE LABELS
+/
+region 
+1 "1" 
+ 2 "2" 
+ 3 "3" 
+ 4 "4" 
+ 5 "5" 
+ 6 "6" 
+ 7 "7" 
+ 8 "8" 
+ 9 "9" 
+ 10 "10" 
+ 11 "11" 
+ 12 "12" 
+ 13 "13" 
+ 14 "14" 
+ 15 "15" 
+/
+sexo 
+1 "1" 
+ 2 "2" 
+.
+VARIABLE LEVEL rph_id, edad, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, 
+ c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, d1, d2, 
+ d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, 
+ d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31, 
+ d32, d33, d34, d35, d36, d37, d38, d39, d40, d41, d42, d43, d44, d45, 
+ d46, d47, fa1, fa2, fa3, fa4, fa5, fa6, fa7, fa8, fa9, fa10, fa11, 
+ fa12 
+ (scale).
+
+EXECUTE.
