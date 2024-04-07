@@ -292,3 +292,8 @@ Datos.num.comple$sexo <- as.factor(Datos.num.comple$sexo )
 install.packages("foreign")
 write.foreign(Datos.num.comple, "Datos.num.comple.sav", "Datos.num.comple.sav", package = "SPSS")
 ?write.foreign
+write.csv(Datos.num.comple,"DatosNumComple.csv")
+
+
+               
+               
