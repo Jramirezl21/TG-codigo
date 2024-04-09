@@ -269,4 +269,3 @@ I_2Select <- (T2.capcomp*MFAcompSelectCap$eig[1,1]/5.613846)+
 Puntaje.I_2 <- 100-((I_2Select - min(I_2Select))*100/(max(I_2Select)-min(I_2Select)))
 Puntaje2.df <- data.frame(Puntaje.I_2)
 dfedad <- data.frame(Puntaje.I_2,Datos.num.incomp$edad,Datos.num.incomp$sexo)
-
